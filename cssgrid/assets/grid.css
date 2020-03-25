@@ -1,0 +1,35 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: 100px 100px 100px; */
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+  width: 99vw;
+  height: 99vh;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.header {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: DimGrey;
+}
+
+.menu {
+  grid-column: 1;
+  grid-row: 2 / span 2;
+  background-color: LightSlateGrey;
+}
+
+.top-content {
+  grid-column: 2 / span 3;
+  grid-row: 1 / span 2;
+  background-color: LightSteelBlue;
+}
+
+.bottom-content {
+  grid-column: 2 / span 3;
+  grid-row: 3;
+  background-color: Maroon;
+}
