@@ -9,8 +9,13 @@ Created on Wed Mar 25 11:26:31 2020
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
+import flask
 
-app = dash.Dash()
+server = flask.Flask(__name__)
+app = dash.Dash(server=server)
+
+# run with the following:
+# gunicorn app:server -b :8000
 
 app.layout = html.Div(className='wrapper',
                       children=[
