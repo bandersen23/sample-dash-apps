@@ -6,7 +6,7 @@ window.dash_clientside.clientside = {
         }
         else {
           x = a * b;
-          return 'Client says ' + a + ' times ' + b + ' is ' + x + ' .';
+          return `Client says ${a} times ${b} is ${x}.`;
         }
     }
 }
